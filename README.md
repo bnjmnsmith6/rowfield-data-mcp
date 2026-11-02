@@ -4,6 +4,8 @@ Use the 19 Rowfield Data scrapers on Apify as **MCP tools** in Claude Desktop, C
 
 > Our own tools, published by Rowfield Data on Apify, built and operated with an AI agent.
 
+**Guides:** plain how-to pages for some of these tools (sitemap to CSV, logo from a domain, state jobs feed and more) are at [bnjmnsmith6.github.io/rowfield-data-guides](https://bnjmnsmith6.github.io/rowfield-data-guides/).
+
 This repo has **no server code**.
 It is a config and docs repo.
 The tools run on **Apify's hosted MCP server** (`https://mcp.apify.com`), which turns any Apify Actor into an MCP tool.
@@ -178,6 +180,7 @@ Prices can change; the Store listing is the source of truth.
 - [`llms-install.md`](llms-install.md): install steps for AI coding agents.
 - [`server.json`](server.json): draft entry for the official MCP Registry (not published yet).
 - [`configs/`](configs/): client config snippets.
+- [Guides](https://bnjmnsmith6.github.io/rowfield-data-guides/): how-to pages for some of the tools.
 
 ## License
 
