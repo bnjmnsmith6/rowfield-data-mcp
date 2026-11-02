@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "rowfield-gov-jobs": {
+      "url": "https://mcp.apify.com?tools=founder-experiment/civicplus-job-postings,founder-experiment/k12-school-district-jobs-applitrack,founder-experiment/california-state-jobs-calcareers,founder-experiment/new-york-state-jobs-statejobsny,founder-experiment/wisconsin-state-government-jobs,founder-experiment/us-state-government-jobs,founder-experiment/canada-provincial-government-jobs,founder-experiment/manitoba-government-jobs,founder-experiment/victoria-government-jobs-careers-vic,founder-experiment/latvia-public-sector-vacancies",
+      "headers": {
+        "Authorization": "Bearer <APIFY_TOKEN>"
+      }
+    }
+  }
+}

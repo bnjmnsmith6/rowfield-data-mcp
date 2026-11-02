@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.bnjmnsmith6/rowfield-data-mcp",
+  "title": "Rowfield Data",
+  "description": "Apify MCP tools: government jobs, bids and tenders, sitemaps, logos, CVEs, regulations.",
+  "repository": {
+    "url": "https://github.com/bnjmnsmith6/rowfield-data-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "websiteUrl": "https://apify.com/founder-experiment",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=founder-experiment/civicplus-job-postings,founder-experiment/k12-school-district-jobs-applitrack,founder-experiment/california-state-jobs-calcareers,founder-experiment/new-york-state-jobs-statejobsny,founder-experiment/wisconsin-state-government-jobs,founder-experiment/us-state-government-jobs,founder-experiment/canada-provincial-government-jobs,founder-experiment/manitoba-government-jobs,founder-experiment/victoria-government-jobs-careers-vic,founder-experiment/latvia-public-sector-vacancies,founder-experiment/civicplus-bid-postings,founder-experiment/eu-ted-tenders-scraper,founder-experiment/federal-register-documents-scraper,founder-experiment/sitemap-url-extractor,founder-experiment/website-logo-extractor,founder-experiment/nvd-cve-scraper,founder-experiment/saashub-alternatives-scraper,founder-experiment/empire-flippers-listings,founder-experiment/usgs-earthquake-catalog",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional when your client supports OAuth (Apify sign-in). Otherwise 'Bearer <your Apify API token>' from console.apify.com/settings/integrations.",
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
