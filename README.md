@@ -1,10 +1,10 @@
 # Rowfield Data MCP
 
-Use the 19 Rowfield Data scrapers on Apify as **MCP tools** in Claude Desktop, Cursor or other MCP clients.
+Use the 20 Rowfield Data scrapers on Apify as **MCP tools** in Claude Desktop, Cursor or other MCP clients.
 
 > Our own tools, published by Rowfield Data on Apify, built and operated with an AI agent.
 
-**Guides:** plain how-to pages for some of these tools (sitemap to CSV, logo from a domain, state jobs feed and more) are at [bnjmnsmith6.github.io/rowfield-data-guides](https://bnjmnsmith6.github.io/rowfield-data-guides/).
+**Guides:** plain how-to pages for some of these tools (sitemap to CSV, logo from a domain, link previews, state jobs feed and more) are at [bnjmnsmith6.github.io/rowfield-data-guides](https://bnjmnsmith6.github.io/rowfield-data-guides/).
 
 This repo has **no server code**.
 It is a config and docs repo.
@@ -17,12 +17,12 @@ You pick Actors with the `tools` URL parameter, as described in the [Apify MCP d
 - An Apify account. Sign in with OAuth when your client asks, or use your own Apify API token from [Apify Console > API & Integrations](https://console.apify.com/settings/integrations).
 - Runs are billed by Apify to **your** account at the Actor prices below.
 
-## Quick start (all 19 tools)
+## Quick start (all 20 tools)
 
 Server URL:
 
 ```
-https://mcp.apify.com?tools=founder-experiment/civicplus-job-postings,founder-experiment/k12-school-district-jobs-applitrack,founder-experiment/california-state-jobs-calcareers,founder-experiment/new-york-state-jobs-statejobsny,founder-experiment/wisconsin-state-government-jobs,founder-experiment/us-state-government-jobs,founder-experiment/canada-provincial-government-jobs,founder-experiment/manitoba-government-jobs,founder-experiment/victoria-government-jobs-careers-vic,founder-experiment/latvia-public-sector-vacancies,founder-experiment/civicplus-bid-postings,founder-experiment/eu-ted-tenders-scraper,founder-experiment/federal-register-documents-scraper,founder-experiment/sitemap-url-extractor,founder-experiment/website-logo-extractor,founder-experiment/nvd-cve-scraper,founder-experiment/saashub-alternatives-scraper,founder-experiment/empire-flippers-listings,founder-experiment/usgs-earthquake-catalog
+https://mcp.apify.com?tools=founder-experiment/civicplus-job-postings,founder-experiment/k12-school-district-jobs-applitrack,founder-experiment/california-state-jobs-calcareers,founder-experiment/new-york-state-jobs-statejobsny,founder-experiment/wisconsin-state-government-jobs,founder-experiment/us-state-government-jobs,founder-experiment/canada-provincial-government-jobs,founder-experiment/manitoba-government-jobs,founder-experiment/victoria-government-jobs-careers-vic,founder-experiment/latvia-public-sector-vacancies,founder-experiment/civicplus-bid-postings,founder-experiment/eu-ted-tenders-scraper,founder-experiment/federal-register-documents-scraper,founder-experiment/sitemap-url-extractor,founder-experiment/website-logo-extractor,founder-experiment/nvd-cve-scraper,founder-experiment/saashub-alternatives-scraper,founder-experiment/empire-flippers-listings,founder-experiment/usgs-earthquake-catalog,founder-experiment/link-preview-open-graph-api
 ```
 
 ### Option 1: OAuth (no token in the config)
@@ -31,7 +31,7 @@ https://mcp.apify.com?tools=founder-experiment/civicplus-job-postings,founder-ex
 {
   "mcpServers": {
     "rowfield-data": {
-      "url": "https://mcp.apify.com?tools=founder-experiment/civicplus-job-postings,founder-experiment/k12-school-district-jobs-applitrack,founder-experiment/california-state-jobs-calcareers,founder-experiment/new-york-state-jobs-statejobsny,founder-experiment/wisconsin-state-government-jobs,founder-experiment/us-state-government-jobs,founder-experiment/canada-provincial-government-jobs,founder-experiment/manitoba-government-jobs,founder-experiment/victoria-government-jobs-careers-vic,founder-experiment/latvia-public-sector-vacancies,founder-experiment/civicplus-bid-postings,founder-experiment/eu-ted-tenders-scraper,founder-experiment/federal-register-documents-scraper,founder-experiment/sitemap-url-extractor,founder-experiment/website-logo-extractor,founder-experiment/nvd-cve-scraper,founder-experiment/saashub-alternatives-scraper,founder-experiment/empire-flippers-listings,founder-experiment/usgs-earthquake-catalog"
+      "url": "https://mcp.apify.com?tools=founder-experiment/civicplus-job-postings,founder-experiment/k12-school-district-jobs-applitrack,founder-experiment/california-state-jobs-calcareers,founder-experiment/new-york-state-jobs-statejobsny,founder-experiment/wisconsin-state-government-jobs,founder-experiment/us-state-government-jobs,founder-experiment/canada-provincial-government-jobs,founder-experiment/manitoba-government-jobs,founder-experiment/victoria-government-jobs-careers-vic,founder-experiment/latvia-public-sector-vacancies,founder-experiment/civicplus-bid-postings,founder-experiment/eu-ted-tenders-scraper,founder-experiment/federal-register-documents-scraper,founder-experiment/sitemap-url-extractor,founder-experiment/website-logo-extractor,founder-experiment/nvd-cve-scraper,founder-experiment/saashub-alternatives-scraper,founder-experiment/empire-flippers-listings,founder-experiment/usgs-earthquake-catalog,founder-experiment/link-preview-open-graph-api"
     }
   }
 }
@@ -45,7 +45,7 @@ On first connection your browser opens an Apify sign-in.
 {
   "mcpServers": {
     "rowfield-data": {
-      "url": "https://mcp.apify.com?tools=founder-experiment/civicplus-job-postings,founder-experiment/k12-school-district-jobs-applitrack,founder-experiment/california-state-jobs-calcareers,founder-experiment/new-york-state-jobs-statejobsny,founder-experiment/wisconsin-state-government-jobs,founder-experiment/us-state-government-jobs,founder-experiment/canada-provincial-government-jobs,founder-experiment/manitoba-government-jobs,founder-experiment/victoria-government-jobs-careers-vic,founder-experiment/latvia-public-sector-vacancies,founder-experiment/civicplus-bid-postings,founder-experiment/eu-ted-tenders-scraper,founder-experiment/federal-register-documents-scraper,founder-experiment/sitemap-url-extractor,founder-experiment/website-logo-extractor,founder-experiment/nvd-cve-scraper,founder-experiment/saashub-alternatives-scraper,founder-experiment/empire-flippers-listings,founder-experiment/usgs-earthquake-catalog",
+      "url": "https://mcp.apify.com?tools=founder-experiment/civicplus-job-postings,founder-experiment/k12-school-district-jobs-applitrack,founder-experiment/california-state-jobs-calcareers,founder-experiment/new-york-state-jobs-statejobsny,founder-experiment/wisconsin-state-government-jobs,founder-experiment/us-state-government-jobs,founder-experiment/canada-provincial-government-jobs,founder-experiment/manitoba-government-jobs,founder-experiment/victoria-government-jobs-careers-vic,founder-experiment/latvia-public-sector-vacancies,founder-experiment/civicplus-bid-postings,founder-experiment/eu-ted-tenders-scraper,founder-experiment/federal-register-documents-scraper,founder-experiment/sitemap-url-extractor,founder-experiment/website-logo-extractor,founder-experiment/nvd-cve-scraper,founder-experiment/saashub-alternatives-scraper,founder-experiment/empire-flippers-listings,founder-experiment/usgs-earthquake-catalog,founder-experiment/link-preview-open-graph-api",
       "headers": {
         "Authorization": "Bearer <APIFY_TOKEN>"
       }
@@ -67,7 +67,7 @@ Replace `<APIFY_TOKEN>` with your own Apify API token. Do not commit it.
         "-y",
         "@apify/actors-mcp-server",
         "--tools",
-        "founder-experiment/civicplus-job-postings,founder-experiment/k12-school-district-jobs-applitrack,founder-experiment/california-state-jobs-calcareers,founder-experiment/new-york-state-jobs-statejobsny,founder-experiment/wisconsin-state-government-jobs,founder-experiment/us-state-government-jobs,founder-experiment/canada-provincial-government-jobs,founder-experiment/manitoba-government-jobs,founder-experiment/victoria-government-jobs-careers-vic,founder-experiment/latvia-public-sector-vacancies,founder-experiment/civicplus-bid-postings,founder-experiment/eu-ted-tenders-scraper,founder-experiment/federal-register-documents-scraper,founder-experiment/sitemap-url-extractor,founder-experiment/website-logo-extractor,founder-experiment/nvd-cve-scraper,founder-experiment/saashub-alternatives-scraper,founder-experiment/empire-flippers-listings,founder-experiment/usgs-earthquake-catalog"
+        "founder-experiment/civicplus-job-postings,founder-experiment/k12-school-district-jobs-applitrack,founder-experiment/california-state-jobs-calcareers,founder-experiment/new-york-state-jobs-statejobsny,founder-experiment/wisconsin-state-government-jobs,founder-experiment/us-state-government-jobs,founder-experiment/canada-provincial-government-jobs,founder-experiment/manitoba-government-jobs,founder-experiment/victoria-government-jobs-careers-vic,founder-experiment/latvia-public-sector-vacancies,founder-experiment/civicplus-bid-postings,founder-experiment/eu-ted-tenders-scraper,founder-experiment/federal-register-documents-scraper,founder-experiment/sitemap-url-extractor,founder-experiment/website-logo-extractor,founder-experiment/nvd-cve-scraper,founder-experiment/saashub-alternatives-scraper,founder-experiment/empire-flippers-listings,founder-experiment/usgs-earthquake-catalog,founder-experiment/link-preview-open-graph-api"
       ],
       "env": {
         "APIFY_TOKEN": "<APIFY_TOKEN>"
@@ -96,7 +96,7 @@ Fewer tools keep the client's tool list short. Use one of these URLs instead:
 - **Developer, SEO and security data**
 
   ```
-  https://mcp.apify.com?tools=founder-experiment/sitemap-url-extractor,founder-experiment/website-logo-extractor,founder-experiment/nvd-cve-scraper
+  https://mcp.apify.com?tools=founder-experiment/sitemap-url-extractor,founder-experiment/website-logo-extractor,founder-experiment/nvd-cve-scraper,founder-experiment/link-preview-open-graph-api
   ```
 - **Market and science data**
 
@@ -159,6 +159,7 @@ Prices can change; the Store listing is the source of truth.
 | [Sitemap URL Extractor & Scraper: All Website URLs](https://apify.com/founder-experiment/sitemap-url-extractor)<br>`founder-experiment/sitemap-url-extractor` | Get every URL of a website from its XML sitemaps: robots.txt and sitemap.xml discovery, indexes, .gz, lastmod and path filters. | $0.25 per 1,000 results (url) + $0.00005 per Actor start (per GB of memory) |
 | [Company Logo & Favicon: Clearbit Logo Alternative](https://apify.com/founder-experiment/website-logo-extractor)<br>`founder-experiment/website-logo-extractor` | Domain to logo in bulk: best logo URL, favicon set, apple-touch and manifest icons, og:image, site name, theme color. | $0.80 per 1,000 results (site result) + $0.00005 per Actor start (per GB of memory) |
 | [NVD CVE Scraper \| $1.5/1k](https://apify.com/founder-experiment/nvd-cve-scraper)<br>`founder-experiment/nvd-cve-scraper` | New and updated CVEs from the NIST NVD API: CVSS 4.0/3.1 scores, severity, CWE, CISA KEV flag, affected products, references. | $1.5 per 1,000 results (cve) + $0.00005 per Actor start (per GB of memory) |
+| [Link Preview & Open Graph API](https://apify.com/founder-experiment/link-preview-open-graph-api)<br>`founder-experiment/link-preview-open-graph-api` | Title, description, og:image, Open Graph and Twitter card tags, favicon, canonical for any URL; failed URLs never charged; robots.txt honored. | $0.80 per 1,000 results (link preview) + $0.00005 per Actor start (per GB of memory) |
 
 ### Market and science data
 
@@ -173,6 +174,7 @@ Prices can change; the Store listing is the source of truth.
 - "Use the US state government jobs tool to list new jobs in Wisconsin."
 - "Get every URL from the sitemap of example.com and give me a CSV."
 - "Find the logo and favicon for these 20 domains."
+- "Get the title and og:image for each of these links."
 - "List new EU TED calls for tender for Germany."
 
 ## Files
