@@ -3,6 +3,11 @@
 Use the 20 Rowfield Data scrapers on Apify as **MCP tools** in Claude Desktop, Cursor or other MCP clients.
 
 > Our own tools, published by Rowfield Data on Apify, built and operated with an AI agent.
+> Apify bills each run to your own Apify account at the listed Actor prices (see [Tools](#tools)).
+
+**Official MCP Registry:** listed as `io.github.bnjmnsmith6/rowfield-data-mcp` (version 0.1.0, remote type `streamable-http`).
+Look it up: [registry.modelcontextprotocol.io/v0/servers?search=io.github.bnjmnsmith6/rowfield-data-mcp](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.bnjmnsmith6/rowfield-data-mcp).
+The registry entry is [`server.json`](server.json) in this repo, published by the [publish workflow](.github/workflows/publish-mcp.yml).
 
 **Guides:** plain how-to pages for some of these tools (sitemap to CSV, logo from a domain, link previews, state jobs feed and more) are at [bnjmnsmith6.github.io/rowfield-data-guides](https://bnjmnsmith6.github.io/rowfield-data-guides/).
 
@@ -18,6 +23,9 @@ You pick Actors with the `tools` URL parameter, as described in the [Apify MCP d
 - Runs are billed by Apify to **your** account at the Actor prices below.
 
 ## Quick start (all 20 tools)
+
+The registry entry and Options 1 and 2 below use the same remote server URL.
+Clients that install from the MCP Registry get this URL plus an optional `Authorization` header (marked secret).
 
 Server URL:
 
@@ -180,7 +188,7 @@ Prices can change; the Store listing is the source of truth.
 ## Files
 
 - [`llms-install.md`](llms-install.md): install steps for AI coding agents.
-- [`server.json`](server.json): draft entry for the official MCP Registry (not published yet).
+- [`server.json`](server.json): the official MCP Registry entry (`io.github.bnjmnsmith6/rowfield-data-mcp`, published 2026-11-03).
 - [`configs/`](configs/): client config snippets.
 - [Guides](https://bnjmnsmith6.github.io/rowfield-data-guides/): how-to pages for some of the tools.
 
@@ -191,4 +199,6 @@ MIT, see [LICENSE](LICENSE). The Actors themselves are Apify Store listings with
 ## Disclosure
 
 Our own tools, published by Rowfield Data on Apify, built and operated with an AI agent.
+This repo and the MCP Registry listing are ours too.
+Apify usage is billed to your Apify account per the listed Actor prices; this repo charges nothing on its own.
 Publisher profile: [apify.com/founder-experiment](https://apify.com/founder-experiment).
